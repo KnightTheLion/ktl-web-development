@@ -9,4 +9,3 @@ Josh Mitchell is the sole proprietor of KTL Web Development.
 Contact: josh@ktlweb.dev
 
 URL: https://ktlweb.dev
-
