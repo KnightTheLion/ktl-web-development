@@ -28,7 +28,7 @@ import projects from "@/models/projects";
 export default function Home() {
   return (
     <>
-      <section className="wrapper border border-green-600 sm:border-red-500 md:border-yellow-500 lg:border-black xl:border-purple-500 grid grid-cols-1 w-full">
+      <section className="wrapper border-green-600 sm:border-red-500 md:border-yellow-500 lg:border-black xl:border-purple-500 grid grid-cols-1 w-full">
         <div className="flex flex-col justify-between">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-center py-5 bg-gradient-to-r from-sky-700 to-sky-400 text-transparent bg-clip-text">
             Knight The Lion
