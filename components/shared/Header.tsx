@@ -6,7 +6,7 @@ import Image from 'next/image'
 const Header = () => {
   return (
     <header className="w-full border-b">
-      <div className="wrapper flex items-center justify-between">
+      <div className="wrapper flex items-center md:justify-between justify-center">
         <Link href="/" className="w-72">
           <Image
             src="/assets/images/logo.svg"
