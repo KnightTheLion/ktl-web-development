@@ -19,7 +19,7 @@ const Header = () => {
 
         
 
-        <div className="flex w-32 justify-end gap-3">
+        <div className="md:flex w-32 justify-end gap-3 hidden">
          
           
             <Button asChild className="rounded-full button bg-sky-600 hover:bg-sky-400" size="lg">
