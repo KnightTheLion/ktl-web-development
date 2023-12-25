@@ -3,6 +3,7 @@ import { Poppins } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/shared/Header';
 import Footer from '@/components/shared/Footer';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -28,6 +29,7 @@ export default function RootLayout({
       <main className='flex-1'>{children}</main>
       <Footer />
       </div>
+      <SpeedInsights />
       </body>
       
     </html>
