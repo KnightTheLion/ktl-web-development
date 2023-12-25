@@ -13,6 +13,7 @@ const Header = () => {
             width={235}
             height={55}
             alt="KTL logo"
+            
           />
         </Link>
 
@@ -21,7 +22,7 @@ const Header = () => {
         <div className="flex w-32 justify-end gap-3">
          
           
-            <Button asChild className="rounded-full" size="lg">
+            <Button asChild className="rounded-full button bg-sky-600 hover:bg-sky-400" size="lg">
               <Link href="#contact">Contact</Link>
             </Button>
         

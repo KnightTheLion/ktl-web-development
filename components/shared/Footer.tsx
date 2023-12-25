@@ -11,7 +11,7 @@ const Footer = () => {
           height={38}
           alt="logo"
         />
-        <p>© 2023 KNIGHT THE LION. All Rights Reserved.</p>
+        <p className="p-medium-14 text-sky-700">© 2023 KNIGHT THE LION. All Rights Reserved.</p>
       </div>
     </footer>
   );
