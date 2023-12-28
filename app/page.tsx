@@ -33,6 +33,7 @@ import {
 } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { EnvelopeOpenIcon } from "@radix-ui/react-icons";
+import ContactForm from "@/components/ContactForm";
 
 import projects from "@/models/projects";
 
@@ -230,7 +231,7 @@ export default function Home() {
                     </a>
                   </li>
                   <li>JavaScript: Intermediate</li>
-                  <li>TypeScript: Intermediate</li>
+                  <li>TypeScript: Novice</li>
                   <li>Web Design: Intermediate</li>
                   <li>
                     UI/UX Design (User Interface / User Experience):
@@ -249,7 +250,9 @@ export default function Home() {
                 Contact
               </div>
             </SheetTrigger>
-            <SheetContent></SheetContent>
+            <SheetContent>
+              <ContactForm />
+            </SheetContent>
           </Sheet>
         </div>
       </div>
