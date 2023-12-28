@@ -3,6 +3,7 @@ interface Project {
     imageUrl: string;
     title: string;
     description: string;
+    type: string;
 }
 
 const projects: Project[] = [
@@ -11,18 +12,21 @@ const projects: Project[] = [
         imageUrl: "/assets/projects/drea-dawn.PNG",
         title: "Drea Dawn Photo + Films",
         description: "Photography + Film Website",
+        type: "self",
     },
     {
-        url: "https://example.com/project1",
+        url: "https://masters-touch-web.vercel.app/",
         imageUrl: "/assets/projects/masters-touch-tile.PNG",
-        title: "Master's Touch Tile",
+        title: "Master's Touch Tile + Stone",
         description: "Business Website.",
+        type: "self",
     },
     {
         url: "https://event-platform-taupe-ten.vercel.app/",
         imageUrl: "/assets/projects/evently.PNG",
-        title: "Evently",
-        description: "Event Creation Website (DEMO SITE) via: JS Mastery",
+        title: "Evently (DEMO SITE)",
+        description: "JS Mastery Project",
+        type: "tutorial-project",
     },
     // Add more projects as needed
 ];
