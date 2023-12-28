@@ -33,7 +33,7 @@ import {
 } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { EnvelopeOpenIcon } from "@radix-ui/react-icons";
-import ContactForm from "@/components/ContactForm";
+
 
 import projects from "@/models/projects";
 
@@ -251,7 +251,6 @@ export default function Home() {
               </div>
             </SheetTrigger>
             <SheetContent>
-              <ContactForm />
             </SheetContent>
           </Sheet>
         </div>
