@@ -23,21 +23,20 @@ export async function sendMail({
     },
   });
   try {
-    const testResult = await transport.verify();
-    console.log(testResult);
+    await transport.verify();
+    
   } catch (error) {
     console.log(error);
     return;
   }
 
   try {
-    const sendResult = await transport.sendMail({
+    await transport.sendMail({
       from: SMTP_EMAIL,
       to,
       subject,
       html: body,
     });
-    console.log(sendResult);
   } catch (error) {
     console.log(error);
   }

@@ -2,8 +2,10 @@ import { useState } from "react";
 import { sendMail } from "@/lib/mail"; // Assuming mail.ts is in the same directory
 import { Button } from "../ui/button";
 import Image from "next/image";
+import { useToast } from "@chakra-ui/react";
 
 const ContactForm = () => {
+  const toast = useToast();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -37,21 +39,31 @@ const ContactForm = () => {
           subject: formData.subject,
           body: `<p>${formData.message}</p>`,
         });
-        // Email sent successfully, you can handle success feedback here
-        console.log("Email sent successfully!");
+        toast({
+            title: "Message sent.",
+            status: "success",
+            duration: 2000,
+            position: "top",
+          });
       } else {
         // Handle empty fields, display an error message or prevent form submission
         console.log("Please fill in all the fields");
       }
     } catch (error) {
       // Handle error while sending email
+      toast({
+        title: "Message failed.",
+        status: "error",
+        duration: 2000,
+        position: "top",
+      });
       console.error("Error sending email:", error);
     }
   };
 
   return (
     <>
-      <div className="flex-center flex-col mt-6">
+      <div className="flex-center flex-col mt-2">
         <div className="pb-4 flex justify-center items-center p-2">
           <Image
             src="/assets/images/logo.svg"
@@ -71,10 +83,10 @@ const ContactForm = () => {
         </div>
         <form
           onSubmit={handleSubmit}
-          className="flex-center flex-col w-full gap-4"
+          className="flex-center flex-col w-full gap-2"
         >
           <div className="flex flex-col w-full">
-            <label className='text-sky-700 pb-2'>Name:</label>
+            <label className="text-sky-700 pb-2">Name:</label>
             <input
               type="text"
               name="name"
@@ -85,7 +97,7 @@ const ContactForm = () => {
             />
           </div>
           <div className="flex flex-col w-full">
-            <label className='text-sky-700 pb-2'>Email:</label>
+            <label className="text-sky-700 pb-2">Email:</label>
             <input
               type="email"
               name="email"
@@ -96,7 +108,7 @@ const ContactForm = () => {
             />
           </div>
           <div className="flex flex-col w-full">
-            <label className='text-sky-700 pb-2'>Subject:</label>
+            <label className="text-sky-700 pb-2">Subject:</label>
             <input
               type="text"
               name="subject"
@@ -107,7 +119,7 @@ const ContactForm = () => {
             />
           </div>
           <div className="flex flex-col w-full">
-            <label className='text-sky-700 pb-2'>Message:</label>
+            <label className="text-sky-700 pb-2">Message:</label>
             <textarea
               name="message"
               value={formData.message}
@@ -116,7 +128,7 @@ const ContactForm = () => {
               className="textarea"
             />
           </div>
-          <Button type="submit" className="w-full">
+          <Button type="submit" className="w-full bg-sky-500 hover:bg-sky-700">
             Send Email
           </Button>
         </form>

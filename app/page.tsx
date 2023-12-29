@@ -243,10 +243,10 @@ export default function Home() {
             </AccordionItem>
           </Accordion>
         </section>
-        <div className="fixed top-1/2 -rotate-90 -right-11 transform -translate-y-1/2 md:hidden">
+        <div className="fixed top-1/2 -rotate-90 -right-10 transform -translate-y-20 md:hidden">
           <Sheet>
             <SheetTrigger>
-              <div className="flex gap-2 h-6 p-3 bg-sky-600 rounded-t-md text-white items-center justify-center opacity-75">
+              <div className="flex gap-2 h-6 p-[14px] bg-sky-600 rounded-t-md text-white items-center justify-center opacity-75">
                 <EnvelopeOpenIcon />
                 Contact
               </div>

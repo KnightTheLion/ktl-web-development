@@ -1,7 +1,14 @@
+'use client'
+
 import Link from "next/link";
 import React from "react";
-import { Button } from "../ui/button";
 import Image from "next/image";
+import {
+  Dialog,
+  DialogContent,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import ContactForm from "./ContactForm";
 
 const Header = () => {
   return (
@@ -16,14 +23,15 @@ const Header = () => {
           />
         </Link>
 
-        <div className="md:flex w-32 justify-end gap-3 hidden">
-          <Button
-            asChild
-            className="button bg-sky-600 hover:bg-sky-400"
-            size="lg"
-          >
-            <Link href="#contact">Contact</Link>
-          </Button>
+        <div className="md:flex justify-end gap-3 hidden">
+          <Dialog>
+            <DialogTrigger>
+              <div className="h-11 rounded-full px-8 bg-sky-500 hover:bg-sky-700 flex-center text-md text-white">Contact</div>
+            </DialogTrigger>
+            <DialogContent>
+              <ContactForm />
+            </DialogContent>
+          </Dialog>
         </div>
       </div>
     </header>
