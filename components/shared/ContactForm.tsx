@@ -63,8 +63,8 @@ const ContactForm = () => {
 
   return (
     <>
-      <div className="flex-center flex-col mt-2">
-        <div className="pb-4 flex justify-center items-center p-2">
+      <div className="flex-center flex-col mt-1">
+        <div className="flex justify-center items-center">
           <Image
             src="/assets/images/logo.svg"
             alt="logo"
@@ -72,7 +72,6 @@ const ContactForm = () => {
             height={55}
           />
         </div>
-        <div className="text-xl font-bold pb-2">Business Inquiries</div>
         <div className="p-2">
           <Image
             src="assets/images/mail.svg"
@@ -83,10 +82,10 @@ const ContactForm = () => {
         </div>
         <form
           onSubmit={handleSubmit}
-          className="flex-center flex-col w-full gap-2"
+          className="flex-center flex-col w-full gap-1"
         >
           <div className="flex flex-col w-full">
-            <label className="text-sky-700 pb-2">Name:</label>
+            <label className="text-sky-700 pb-1">Name:</label>
             <input
               type="text"
               name="name"
@@ -97,7 +96,7 @@ const ContactForm = () => {
             />
           </div>
           <div className="flex flex-col w-full">
-            <label className="text-sky-700 pb-2">Email:</label>
+            <label className="text-sky-700 pb-1">Email:</label>
             <input
               type="email"
               name="email"
@@ -108,7 +107,7 @@ const ContactForm = () => {
             />
           </div>
           <div className="flex flex-col w-full">
-            <label className="text-sky-700 pb-2">Subject:</label>
+            <label className="text-sky-700 pb-1">Subject:</label>
             <input
               type="text"
               name="subject"
@@ -119,7 +118,7 @@ const ContactForm = () => {
             />
           </div>
           <div className="flex flex-col w-full">
-            <label className="text-sky-700 pb-2">Message:</label>
+            <label className="text-sky-700 pb-1">Message:</label>
             <textarea
               name="message"
               value={formData.message}
