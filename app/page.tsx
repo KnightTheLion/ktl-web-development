@@ -33,6 +33,7 @@ import {
 } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { EnvelopeOpenIcon } from "@radix-ui/react-icons";
+import ContactForm from "@/components/shared/ContactForm";
 
 
 import projects from "@/models/projects";
@@ -245,12 +246,13 @@ export default function Home() {
         <div className="fixed top-1/2 -rotate-90 -right-11 transform -translate-y-1/2 md:hidden">
           <Sheet>
             <SheetTrigger>
-              <div className="flex gap-2 h-6 p-2 bg-sky-600 rounded-t-md text-white items-center justify-center">
+              <div className="flex gap-2 h-6 p-3 bg-sky-600 rounded-t-md text-white items-center justify-center opacity-75">
                 <EnvelopeOpenIcon />
                 Contact
               </div>
             </SheetTrigger>
             <SheetContent>
+              <ContactForm />
             </SheetContent>
           </Sheet>
         </div>
