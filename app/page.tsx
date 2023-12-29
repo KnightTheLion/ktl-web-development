@@ -23,18 +23,10 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { EnvelopeOpenIcon } from "@radix-ui/react-icons";
 import ContactForm from "@/components/shared/ContactForm";
-
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 
 import projects from "@/models/projects";
 
@@ -77,8 +69,8 @@ export default function Home() {
               <Image
                 src="/assets/images/hero.webp"
                 alt="hero"
-                width={1000}
-                height={1000}
+                width={130}
+                height={130}
                 className="hero"
               />
               <div className="flex flex-col justify-center gap-3 p-5 container">
@@ -243,18 +235,18 @@ export default function Home() {
             </AccordionItem>
           </Accordion>
         </section>
-        <div className="fixed top-1/2 -rotate-90 -right-10 transform -translate-y-40 md:hidden">
-          <Sheet>
-            <SheetTrigger>
-              <div className="flex gap-2 h-6 p-[14px] bg-sky-600 rounded-t-md text-white items-center justify-center opacity-75">
+        <div className="fixed top-1/2 -rotate-90 -right-12 transform -translate-y-1/2 md:hidden">
+          <Dialog>
+            <DialogTrigger>
+              <div className="flex gap-2 h-6 p-[13px] bg-sky-600 rounded-t-md text-white items-center justify-center opacity-75">
                 <EnvelopeOpenIcon />
                 Contact
               </div>
-            </SheetTrigger>
-            <SheetContent>
+            </DialogTrigger>
+            <DialogContent>
               <ContactForm />
-            </SheetContent>
-          </Sheet>
+            </DialogContent>
+          </Dialog>
         </div>
       </div>
     </>
