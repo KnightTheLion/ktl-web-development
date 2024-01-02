@@ -8,7 +8,7 @@ interface Project {
 
 const projects: Project[] = [
     {
-        url: "https://drea-dawn-photo-films.vercel.app/",
+        url: "https://drea-dawn-films.vercel.app/",
         imageUrl: "/assets/projects/drea-dawn.webp",
         title: "Drea Dawn Photo + Films",
         description: "Photography + Film Website",
