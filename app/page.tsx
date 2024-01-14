@@ -74,9 +74,9 @@ export default function Home() {
                 className="hero"
               />
               <div className="flex flex-col justify-center gap-3 p-5 container">
-                <h3 className="text-[20px] font-bold text-sky-700">
+                <h2 className="text-[20px] font-bold text-sky-700">
                   Joshua Mitchell
-                </h3>
+                </h2>
                 <a href="mailto:josh@ktlweb.dev" className="p-regular-20">
                   <div className="flex items-center gap-2 text-sky-900">
                     <Image
@@ -107,9 +107,9 @@ export default function Home() {
               </div>
             </a>
           </div>
-          <h2 className="text-xl font-semibold text-center py-5 md:py-10 text-sky-500">
+          <h3 className="text-xl font-semibold text-center py-5 md:py-10 text-sky-500">
             Web Development / Web Design
-          </h2>
+          </h3>
         </section>
         <section className="wrapper grid grid-cols-1 w-full">
           <div className="flex-center flex-col gap-4">

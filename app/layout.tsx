@@ -12,11 +12,13 @@ const poppins = Poppins({
   variable: "--font-poppins",
 });
 
-export const metadata: Metadata = {
+const metadata: Metadata = {
   title: "KTL Web Dev",
   description:
     "Knight The Lion (KTL) Web Development, based in the Triad, NC, specializes in crafting innovative and professional web solutions using Next.js, Tailwind CSS, and more. Explore our portfolio to witness our expertise firsthand.",
+    metadataBase: new URL('https://ktlweb.dev'),
 };
+export { metadata }
 
 export default function RootLayout({
   children,
