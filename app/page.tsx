@@ -1,6 +1,6 @@
-"use client";
 
-import { useState } from "react";
+
+
 import Image from "next/image";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import {
@@ -27,29 +27,19 @@ import { Button } from "@/components/ui/button";
 import { EnvelopeOpenIcon } from "@radix-ui/react-icons";
 import ContactForm from "@/components/shared/ContactForm";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import Projects from "@/components/shared/Projects";
 
 import projects from "@/models/projects";
 
 export default function Home() {
-  const [filter, setFilter] = useState("all");
-
-  const filteredProjects = () => {
-    if (filter === "self") {
-      return projects.filter((project) => project.type === "self");
-    } else if (filter === "tutorials") {
-      return projects.filter((project) => project.type === "tutorial-project");
-    } else {
-      return projects;
-    }
-  };
-
+  
   return (
     <>
       <div className="relative">
         <section className="wrapper border-green-600 sm:border-red-500 md:border-yellow-500 lg:border-black xl:border-purple-500 grid grid-cols-1 w-full">
           <div className="flex flex-col justify-between">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-center py-5 bg-gradient-to-r from-sky-700 to-sky-400 text-transparent bg-clip-text">
-              Knight The Lion
+             KTL Web Development
             </h1>
             <div className="flex gap-5 justify-center md:hidden">
               <a href="https://github.com/KnightTheLion">
@@ -68,10 +58,11 @@ export default function Home() {
             <div className="flex w-fit">
               <Image
                 src="/assets/images/hero.webp"
-                alt="hero"
-                width={130}
-                height={130}
+                alt="Developer Avatar"
+                width={128}
+                height={128}
                 className="hero"
+                priority={true}
               />
               <div className="flex flex-col justify-center gap-3 p-5 container">
                 <h2 className="text-[20px] font-bold text-sky-700">
@@ -108,89 +99,12 @@ export default function Home() {
             </a>
           </div>
           <h3 className="text-xl font-semibold text-center py-5 md:py-10 text-sky-500">
-            Web Development / Web Design
+            Web Developer / Designer
           </h3>
         </section>
-        <section className="wrapper grid grid-cols-1 w-full">
-          <div className="flex-center flex-col gap-4">
-            <div className="flex-center w-full gap-4">
-              <div className="border border-sky-600 w-full" />
-              <h2 className="p-bold-24 text-sky-600">PROJECTS</h2>
-              <div className="border border-sky-600 w-full" />
-            </div>
-            {/* FILTER BUTTONS */}
-            <div className="flex-center gap-4">
-              <Button
-                className={`${
-                  filter === "all"
-                    ? "text-sky-600 border-b border-sky-600"
-                    : "text-slate-400"
-                } px-4 py-2 text-xl bg-transparent`}
-                onClick={() => setFilter("all")}
-              >
-                All
-              </Button>
-              <Button
-                className={`${
-                  filter === "self"
-                    ? "text-sky-600 border-b border-sky-600"
-                    : "text-slate-400"
-                } px-4 py-2 text-xl bg-transparent`}
-                onClick={() => setFilter("self")}
-              >
-                Self
-              </Button>
-              <Button
-                className={`${
-                  filter === "tutorials"
-                    ? "text-sky-600  border-sky-600 border-b"
-                    : "text-slate-400"
-                } px-4 py-2 text-xl bg-transparent`}
-                onClick={() => setFilter("tutorials")}
-              >
-                Tutorials
-              </Button>
-            </div>
-          </div>
-          <div className="flex-center wrapper text-pretty">
-            <Carousel className="w-full wrapper">
-              <CarouselContent className="-ml-1 ">
-                {filteredProjects().map((project, index) => (
-                  <CarouselItem
-                    key={index}
-                    className="pl-1 md:basis-1/2 lg:basis-1/3"
-                  >
-                    <div className="p-1">
-                      <a href={project.url}>
-                        <Card className="shadow-md hover:shadow-xl">
-                          <CardContent>
-                            <Image
-                              src={project.imageUrl}
-                              alt="project"
-                              width={336}
-                              height={210}
-                              unoptimized={true}
-                            />
-                          </CardContent>
-                          <div className="p-2 flex flex-col justify-left gap-2 text-nowrap overflow-hidden">
-                            <CardTitle className="text-md md:text-lg">
-                              {project.title}
-                            </CardTitle>
-                            <CardDescription>
-                              {project.description}
-                            </CardDescription>
-                          </div>
-                        </Card>
-                      </a>
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
-            </Carousel>
-          </div>
-        </section>
+
+        <Projects />
+
         <section className="wrapper grid grid-cols-1 w-full text-sky-700">
           <Accordion type="multiple">
             <AccordionItem value="item-1">

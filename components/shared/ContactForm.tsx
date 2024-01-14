@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import { sendMail } from "@/lib/mail"; // Assuming mail.ts is in the same directory
 import { Button } from "../ui/button";
