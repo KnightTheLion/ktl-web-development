@@ -77,7 +77,19 @@ export default function Home() {
           </h3>
         </section>
         <Projects />
+        <div className='wrapper flex-center flex-col gap-4 text-center'>
+            <h4 className='text-2xl font-semibold text-sky-700'>Lighthouse Score</h4>
+            <p className='font-medium text-sky-800'>KTL produces web applications with optimal performance, while providing great accessibility and search engine optimization (SEO)</p>
+            <Image
+              src="/assets/images/ktl-lighthouse-score.webp"
+              alt="Lighthouse Score"
+              width={375}
+              height={116}
+              unoptimized={true}
+            />
+          </div>
         <Accordions />
+        
         <MobileContact />
       </div>
     </>
