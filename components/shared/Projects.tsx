@@ -43,7 +43,7 @@ const Projects = () => {
               <Button
                 className={`${
                   filter === "all"
-                    ? "text-sky-600 border-b border-sky-600"
+                    ? "text-sky-800 border-b border-sky-600"
                     : "text-slate-400"
                 } px-4 py-2 text-xl bg-transparent`}
                 onClick={() => setFilter("all")}
@@ -53,7 +53,7 @@ const Projects = () => {
               <Button
                 className={`${
                   filter === "self"
-                    ? "text-sky-600 border-b border-sky-600"
+                    ? "text-sky-800 border-b border-sky-600"
                     : "text-slate-400"
                 } px-4 py-2 text-xl bg-transparent`}
                 onClick={() => setFilter("self")}
@@ -63,7 +63,7 @@ const Projects = () => {
               <Button
                 className={`${
                   filter === "tutorials"
-                    ? "text-sky-600  border-sky-600 border-b"
+                    ? "text-sky-800  border-sky-600 border-b"
                     : "text-slate-400"
                 } px-4 py-2 text-xl bg-transparent`}
                 onClick={() => setFilter("tutorials")}

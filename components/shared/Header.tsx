@@ -26,7 +26,7 @@ const Header = () => {
         <div className="md:flex justify-end gap-3 hidden">
           <Dialog>
             <DialogTrigger>
-              <div className="h-11 rounded-full px-8 bg-sky-500 hover:bg-sky-700 flex-center text-md text-white">Contact</div>
+              <div className="h-11 rounded-full px-8 bg-gradient-to-r from-sky-600 to-sky-700 hover:bg-sky-600 hover:animate-pulse flex-center text-md text-white">Contact</div>
             </DialogTrigger>
             <DialogContent>
               <ContactForm />

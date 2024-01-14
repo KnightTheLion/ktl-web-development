@@ -8,19 +8,19 @@ export default function Home() {
   return (
     <>
       <div className="relative">
-        <section className="wrapper border-green-600 sm:border-red-500 md:border-yellow-500 lg:border-black xl:border-purple-500 grid grid-cols-1 w-full">
+        <section className="wrapper grid grid-cols-1 w-full">
           <div className="flex flex-col justify-between">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-center py-5 bg-gradient-to-r from-sky-700 to-sky-400 text-transparent bg-clip-text">
+            <h1 className="text-[2.9em] leading-none md:text-6xl lg:text-7xl font-extrabold text-center py-6 bg-gradient-to-r from-sky-700 to-sky-400 text-transparent bg-clip-text">
               KTL Web Development
             </h1>
             <div className="flex gap-5 justify-center md:hidden">
               <a href="https://github.com/KnightTheLion">
-                <div className="flex-center gap-2 text-sky-600" role="link">
+                <div className="flex-center gap-2 text-sky-700" role="link">
                   <FaGithub size="2em" title="GitHub" />
                 </div>
               </a>
               <a href="https://www.linkedin.com/in/joshua-mitchell-779493207/">
-                <div className="flex-center gap-2 text-sky-600" role="link">
+                <div className="flex-center gap-2 text-sky-700" role="link">
                   <FaLinkedin size="2em" title="LinkedIn" />
                 </div>
               </a>
@@ -60,19 +60,19 @@ export default function Home() {
           </div>
           <div className="hidden md:flex-center gap-10">
             <a href="https://github.com/KnightTheLion">
-              <div className="flex-center gap-2 text-sky-600" role="link">
+              <div className="flex-center gap-2 text-sky-700" role="link">
                 <FaGithub size="3em" title="GitHub" />
                 <span className="p-medium-18 ">GitHub</span>
               </div>
             </a>
             <a href="https://www.linkedin.com/in/joshua-mitchell-779493207/">
-              <div className="flex-center gap-2 text-sky-600" role="link">
+              <div className="flex-center gap-2 text-sky-700" role="link">
                 <FaLinkedin size="3em" title="LinkedIn" />
                 <span className="p-medium-18 ">LinkedIn</span>
               </div>
             </a>
           </div>
-          <h3 className="text-xl font-semibold text-center py-5 md:py-10 text-sky-500">
+          <h3 className="text-xl font-semibold text-center py-5 md:py-10 text-sky-600">
             Web Developer / Designer
           </h3>
         </section>
