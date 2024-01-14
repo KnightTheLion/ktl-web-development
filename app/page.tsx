@@ -14,18 +14,12 @@ export default function Home() {
               KTL Web Development
             </h1>
             <div className="flex gap-5 justify-center md:hidden">
-              <a
-                href="https://github.com/KnightTheLion"
-                aria-label="Go to Developers GitHub Account"
-              >
+              <a href="https://github.com/KnightTheLion">
                 <div className="flex-center gap-2 text-sky-600" role="link">
                   <FaGithub size="2em" title="GitHub" />
                 </div>
               </a>
-              <a
-                href="https://www.linkedin.com/in/joshua-mitchell-779493207/"
-                aria-label="Go to Developers LinkedIn Account"
-              >
+              <a href="https://www.linkedin.com/in/joshua-mitchell-779493207/">
                 <div className="flex-center gap-2 text-sky-600" role="link">
                   <FaLinkedin size="2em" title="LinkedIn" />
                 </div>
@@ -64,19 +58,14 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div
-            className="hidden md:flex-center gap-10"
-          >
-            <a href="https://github.com/KnightTheLion" aria-label="Go to Developers GitHub Account">
+          <div className="hidden md:flex-center gap-10">
+            <a href="https://github.com/KnightTheLion">
               <div className="flex-center gap-2 text-sky-600" role="link">
                 <FaGithub size="3em" title="GitHub" />
                 <span className="p-medium-18 ">GitHub</span>
               </div>
             </a>
-            <a
-              href="https://www.linkedin.com/in/joshua-mitchell-779493207/"
-              aria-label="Go to Developers LinkedIn Account"
-            >
+            <a href="https://www.linkedin.com/in/joshua-mitchell-779493207/">
               <div className="flex-center gap-2 text-sky-600" role="link">
                 <FaLinkedin size="3em" title="LinkedIn" />
                 <span className="p-medium-18 ">LinkedIn</span>
