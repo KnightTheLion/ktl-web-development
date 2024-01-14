@@ -35,7 +35,7 @@ const Projects = () => {
           <div className="flex-center flex-col gap-4">
             <div className="flex-center w-full gap-4">
               <div className="border border-sky-600 w-full" />
-              <h4 className="p-bold-24 text-sky-600">PROJECTS</h4>
+              <h4 className="p-bold-24 text-sky-700">PROJECTS</h4>
               <div className="border border-sky-600 w-full" />
             </div>
             {/* FILTER BUTTONS */}
@@ -44,7 +44,7 @@ const Projects = () => {
                 className={`${
                   filter === "all"
                     ? "text-sky-800 border-b border-sky-600"
-                    : "text-slate-400"
+                    : "text-sky-700"
                 } px-4 py-2 text-xl bg-transparent`}
                 onClick={() => setFilter("all")}
               >
@@ -54,7 +54,7 @@ const Projects = () => {
                 className={`${
                   filter === "self"
                     ? "text-sky-800 border-b border-sky-600"
-                    : "text-slate-400"
+                    : "text-sky-700"
                 } px-4 py-2 text-xl bg-transparent`}
                 onClick={() => setFilter("self")}
               >
@@ -64,7 +64,7 @@ const Projects = () => {
                 className={`${
                   filter === "tutorials"
                     ? "text-sky-800  border-sky-600 border-b"
-                    : "text-slate-400"
+                    : "text-sky-700"
                 } px-4 py-2 text-xl bg-transparent`}
                 onClick={() => setFilter("tutorials")}
               >

@@ -8,7 +8,7 @@ const MobileContact = () => {
     <div className="fixed top-1/2 -rotate-90 -right-12 transform -translate-y-1/2 md:hidden">
           <Dialog>
             <DialogTrigger>
-              <div className="flex gap-2 h-6 p-[13px] bg-sky-600 rounded-t-md text-white items-center justify-center opacity-75">
+              <div className="flex gap-2 h-6 p-[13px] bg-sky-700 rounded-t-md text-white items-center justify-center">
                 <EnvelopeOpenIcon />
                 Contact
               </div>

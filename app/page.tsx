@@ -72,7 +72,7 @@ export default function Home() {
               </div>
             </a>
           </div>
-          <h3 className="text-xl font-semibold text-center py-5 md:py-10 text-sky-600">
+          <h3 className="text-2xl font-semibold text-center py-5 md:py-10 text-sky-700">
             Web Developer / Designer
           </h3>
         </section>
