@@ -167,8 +167,9 @@ export default function Home() {
                             <Image
                               src={project.imageUrl}
                               alt="project"
-                              width={160 * 4}
-                              height={90 * 4}
+                              width={336}
+                              height={210}
+                              unoptimized={true}
                             />
                           </CardContent>
                           <div className="p-2 flex flex-col justify-left gap-2 text-nowrap overflow-hidden">

@@ -17,8 +17,8 @@ const Header = () => {
         <Link href="/">
           <Image
             src="/assets/images/logo.svg"
-            width={235}
-            height={55}
+            width={240}
+            height={53.14}
             alt="KTL logo"
           />
         </Link>
