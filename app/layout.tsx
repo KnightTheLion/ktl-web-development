@@ -13,12 +13,25 @@ const poppins = Poppins({
 });
 
 const metadata: Metadata = {
-  title: "KTL Web Dev",
+  title:
+    "KTL | Empowering Business Growth Through Expert Web Application Development",
   description:
-    "Knight The Lion (KTL) Web Development, based in the Triad, NC, specializes in crafting innovative and professional web solutions using Next.js, Tailwind CSS, and more. Explore our portfolio to witness our expertise firsthand.",
-    metadataBase: new URL('https://ktlweb.dev'),
+    "Freelance web developer dedicated to crafting cutting-edge solutions for small businesses. Elevate your online presence with innovative designs and seamless functionality. Let's build your success together.",
+  keywords: [
+    "web developer",
+    "web design",
+    "website design",
+    "web development",
+    "web designer near me",
+    "Triad, NC",
+    "Greensboro, NC",
+    "Asheboro, NC",
+    "North Carolina",
+    "mobile website designer",
+  ],
+  metadataBase: new URL("https://ktlweb.dev"),
 };
-export { metadata }
+export { metadata };
 
 export default function RootLayout({
   children,
